@@ -1,6 +1,6 @@
 using System;
 
-namespace VoughtSuperhero.Models
+namespace Required.Models
 {
     public class ErrorViewModel
     {

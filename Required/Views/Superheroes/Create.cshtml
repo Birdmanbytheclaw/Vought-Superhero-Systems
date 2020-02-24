@@ -1,0 +1,53 @@
+﻿@model Required.Models.Superhero
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Superhero</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SuperheroName" class="control-label"></label>
+                <input asp-for="SuperheroName" class="form-control" />
+                <span asp-validation-for="SuperheroName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AlterEgo" class="control-label"></label>
+                <input asp-for="AlterEgo" class="form-control" />
+                <span asp-validation-for="AlterEgo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SuperpowerOne" class="control-label"></label>
+                <input asp-for="SuperpowerOne" class="form-control" />
+                <span asp-validation-for="SuperpowerOne" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SuperpowerTwo" class="control-label"></label>
+                <input asp-for="SuperpowerTwo" class="form-control" />
+                <span asp-validation-for="SuperpowerTwo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CatchPhrase" class="control-label"></label>
+                <input asp-for="CatchPhrase" class="form-control" />
+                <span asp-validation-for="CatchPhrase" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

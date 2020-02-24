@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using VoughtSuperhero.Models;
+using Required.Models;
 
-namespace VoughtSuperhero.Controllers
+namespace Required.Controllers
 {
     public class HomeController : Controller
     {
