@@ -11,9 +11,10 @@
 </p>
 <table class="table">
     <thead>
-        <tr>
+        <tr class="table-warning">
             <th>
-                @Html.DisplayNameFor(model => model.SuperheroName)
+            
+            @Html.DisplayNameFor(model => model.SuperheroName)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.AlterEgo)
@@ -32,7 +33,7 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
+        <tr Class="table-dark">
             <td>
                 @Html.DisplayFor(modelItem => item.SuperheroName)
             </td>
